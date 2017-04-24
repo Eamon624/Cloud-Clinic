@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2017-04-16 23:05:14
+  hospital: MyText
+  department: MyText
+  info: MyText
+
+two:
+  date: 2017-04-16 23:05:14
+  hospital: MyText
+  department: MyText
+  info: MyText

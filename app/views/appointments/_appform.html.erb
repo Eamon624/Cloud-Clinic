@@ -1,0 +1,13 @@
+<%= simple_form_for([@patient, @patient.appointments.build]) do |f| %>
+
+
+<div class="well">
+  <%= f.input :date %>
+
+  <hr>
+
+  <%= f.button :submit %>
+
+<% end %>
+
+</div>

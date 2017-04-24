@@ -1,0 +1,21 @@
+
+
+<h1>Edit Patient</h1>
+
+<div class="well">
+
+<%= simple_form_for @patient, :html => { :multipart => true }  do |f| %>
+
+  <%= f.select :clinic_id, @clinics %>
+   <hr>
+  <%= f.input :name, label: "Patient Name" %>
+   <hr>
+  <%= f.input :information, label: "Illness" %>
+   <hr>
+  <%= f.input :contactinfo, label: "Phone Number" %>
+   <hr>
+  <%= f.button :submit %>
+
+<% end %>
+
+</div>

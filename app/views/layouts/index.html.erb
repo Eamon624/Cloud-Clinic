@@ -1,0 +1,23 @@
+<h1 class="current-clinic"><%= params[:clinic] %></h1>
+
+<%#=
+  Lists patients for that Clinic 
+%>
+
+
+<% @patients.each do |patient| %>
+  <h2><%= link_to patient.name, patient_path(patient) %></h2>
+  <% end %>
+<% end %>
+
+
+<%#=
+  If there isn't any patients registered to that clinic
+%>
+
+<% if @patients.count == 0 %>
+  <h2>There are currently no patients registered with this clinic.</h2>
+<% else %>
+
+
+

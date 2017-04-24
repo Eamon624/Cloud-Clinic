@@ -1,0 +1,19 @@
+
+<div class="well">
+
+<%= simple_form_for @patient do |f| %>
+
+  <%= select_tag(:clinic_id, options_for_select(@clinics), :prompt => "Select a category") %>
+        <hr>
+  <%= f.input :name, label: "Patient Name" %>
+        <hr>
+  <%= f.input :information, label: "Illness"  %>
+        <hr>
+  <%= f.input :contactinfo, label: "Contact Number" %>
+        <hr>
+  <%= f.button :submit %>
+        <hr>
+
+<% end %>
+
+</div>
